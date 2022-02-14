@@ -510,16 +510,7 @@ font-size: 32px;
 line-height: 150%;
 }
 .page_start-mining {
-    @media(max-width:1229px){
-        .page_start-mining .start-mining-block .start-mining-title {
-            padding-bottom: 16px;
-            margin-right: 100px;
-            .text-mail{
-                width: auto;
-             }
-        }
-    
-    }
+
     background: linear-gradient(#2B076E,#0D0D2B);
     padding: 88px 0px;
     position: relative;
@@ -534,6 +525,7 @@ line-height: 150%;
             display: flex;
             align-items: center;
         }
+       
        padding:48px;
         background: #3671E9;
        
@@ -661,4 +653,55 @@ line-height: 150%;
     z-index: 0;
     right: 15px;
     bottom: 0;
+}
+
+@media(max-width:1186px){
+    .page_start-mining .start-mining-block .start-mining-title {
+        padding-bottom: 16px;
+        margin-right: 100px;
+    }
+}
+@media(max-width:1119px){
+    .page_start-mining .start-mining-block .start-mining-title {
+        padding-bottom: 16px;
+        margin-right: 50px;
+    }
+}
+@media(max-width:1119px){
+    .page_start-mining .start-mining-block .start-mining-title {
+        padding-bottom: 16px;
+        margin-right: 50px;
+    }
+}
+@media(max-width:1055px){
+    .page_start-mining .start-mining-block .start-mining-flex, .start-mining-text {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+    .page_start-mining .start-mining-block .start-mining-title {
+        padding-bottom: 16px;
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .page_start-mining .start-mining-block .start-mining-text {
+        text-align: center;
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   .form-mail{
+       justify-content: space-between;
+   }
+   
+}
+@media(max-width:672px){
+    .form-mail{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .subscribe-button{
+        margin-top: 15px;
+    }
 }

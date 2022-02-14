@@ -616,15 +616,6 @@ header {
   padding: 88px 0px;
   position: relative;
 }
-@media (max-width: 1229px) {
-  .page_start-mining .page_start-mining .start-mining-block .start-mining-title {
-    padding-bottom: 16px;
-    margin-right: 100px;
-  }
-  .page_start-mining .page_start-mining .start-mining-block .start-mining-title .text-mail {
-    width: auto;
-  }
-}
 .page_start-mining .image-detail-O2 {
   position: absolute;
   z-index: 0;
@@ -754,4 +745,58 @@ header {
   z-index: 0;
   right: 15px;
   bottom: 0;
+}
+
+@media (max-width: 1186px) {
+  .page_start-mining .start-mining-block .start-mining-title {
+    padding-bottom: 16px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 1119px) {
+  .page_start-mining .start-mining-block .start-mining-title {
+    padding-bottom: 16px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1119px) {
+  .page_start-mining .start-mining-block .start-mining-title {
+    padding-bottom: 16px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1055px) {
+  .page_start-mining .start-mining-block .start-mining-flex, .start-mining-text {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+
+  .page_start-mining .start-mining-block .start-mining-title {
+    padding-bottom: 16px;
+    margin-right: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .page_start-mining .start-mining-block .start-mining-text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-mail {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 672px) {
+  .form-mail {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribe-button {
+    margin-top: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
