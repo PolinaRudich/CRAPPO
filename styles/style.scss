@@ -24,6 +24,9 @@ header{
 .page-bitcoin-card, .page_statistics, .page_analitics{
     background: $main-lighter-color;
 }
+.main-block-container, .advantages-container,.benefits_container, .check-container, .calculate-container, .currancy-container, .bitcoin-card_container, .analitics_container, .start-mining_container , .navigation_container, .contacts-container{
+    padding: 0px 15px;
+}
 .header-container{
     min-height: 112px;
     display: flex;
@@ -162,12 +165,16 @@ color: white;
         border-right: 2px solid #3671E9;
 }
 .image-main{
-    padding-top:172px;
+    top:172px;
     position: relative;
     img{
         max-width: 100%;
         z-index: 2;
     }
+    @media(max-width:1087px){
+        top:340px;
+    }
+
 }
 .image-detail{
     position: absolute;
@@ -204,10 +211,7 @@ color: white;
 .page-advantages{
     padding: 100px 0px 23px;
 }
-.advantages-container{
-    display: flex;
-    justify-content: space-between;
-}
+
 .advantages-column{
     display: flex;
     .advantages-body {
@@ -216,10 +220,35 @@ color: white;
             font-weight: bold;
             font-size: 40px;
             line-height: 150%;
-}
+          }
+        }
+        @media(max-width:931px){
+            flex-direction: column;
+            align-items: center;
+            .item-advantages-image{
+                width: 50%;
+                height: 50%;
+            }
+            .item-advantages-title{
+                text-align: center;
+            }
         }
     }
-
+    .advantages-container{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width:641px){
+            display: block;
+            .item-advantages-image{
+                width: 20%;
+                height: 20%;
+                margin-left: 8px;
+            }
+            .item-advantages-text{
+                padding-bottom: 40px;
+            }
+        }
+    }
 /* BENEFITS */
 .page-benefits{
     padding: 79px 100px;
@@ -259,7 +288,7 @@ color: white;
     .check-text-block{
         text-align: center;
         .check-text{
-            width: 622px;
+            max-width: 622px;
             margin: 0 auto;
             padding-bottom: 0;
         }
@@ -363,13 +392,17 @@ color: #0D0D2B;
 .currency_title{
     color: black;
     text-align: center;
+    font-weight: bold;
+    font-size: 40px;
 }
 .currancy-flex-body {
     display: flex;
     justify-content: center;
+    @media(min-width:945px){
     .currancy-column:not(:last-child) {
         margin-right: 45px;
     }
+}
     .currancy-column{
         padding: 48px 15px;
         flex: 0 1 33.333%;
@@ -393,14 +426,7 @@ color: #0D0D2B;
         }
     }
 }
-@media(max-width:945px){
-    .currancy-flex-body{
-        flex-wrap: wrap;
-    }
-    .currancy-column:nth-child(3){
-        margin-top: 20px;
-    }
-}
+
 .currency_title{
     margin-bottom: 64px;
 }
@@ -531,10 +557,6 @@ line-height: 150%;
        
         border-radius: 16px;
        position: relative;
-        .start-mining-text-block{
-            
-
-        }
         .start-mining-title{
             padding-bottom:16px ;
             margin-right: 188px;
@@ -574,6 +596,7 @@ line-height: 150%;
             display: block;
         }
     }
+   
 }
 
 
@@ -677,7 +700,7 @@ line-height: 150%;
     .page_start-mining .start-mining-block .start-mining-flex, .start-mining-text {
         display: block;
         align-items: center;
-        width: 100%;
+        
     }
     .page_start-mining .start-mining-block .start-mining-title {
         padding-bottom: 16px;
@@ -687,8 +710,8 @@ line-height: 150%;
     }
     .page_start-mining .start-mining-block .start-mining-text {
         text-align: center;
-       width: 100%;
        margin-bottom: 20px;
+       width: 100%;
    }
    .form-mail{
        justify-content: space-between;
@@ -703,5 +726,128 @@ line-height: 150%;
     }
     .subscribe-button{
         margin-top: 15px;
+    }
+}
+@media(max-width:474px){
+    .page_start-mining .start-mining-block .text-mail{
+        min-width: 100%;
+    }
+    .page_start-mining .start-mining-block .subscribe-button{
+        margin-left: 0;
+    }
+}
+
+@media(max-width:797px){
+    .image-main{
+    display: none;
+    }
+    .main-block-container{
+        justify-content: center;
+        text-align: center;
+    }
+    .sale-container, .main-text{
+        display: inline-block;
+    }
+    .try{
+        margin: 0 auto;
+    }
+    .benefits_container, .flex-container{
+        flex-direction: column;
+        .benefits-text-block{
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .flex-container{
+        flex-direction: column-reverse;
+        .image-bitcoin-card{
+            width: auto;
+            margin-left: 0px;
+        }
+        .bitcoin-card-text-block{
+            align-self: flex-start;
+        }
+    }
+    .bitcoin-card-text-block{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+        align-items: center;
+        justify-items: flex-end;
+    }
+    .statistics-text-block{
+        text-align: center;
+    }
+    .button-statistics{
+        margin-bottom: 20px;
+    }
+    .navigation_container{
+        flex-direction: column;
+        text-align: center;
+        .payment-title{
+            display: inline-block;
+        }
+        .cards-payment{
+            justify-content: center;
+        }
+    }
+
+}
+@media(max-width:631px){
+    .bitcoin-card-text-block{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       text-align: center;
+       padding: 0;
+    }
+    .bitcoin-card-text{
+        width: auto;
+    }
+    .contacts-container{
+        display: block;
+        width: fit-content;
+        .rights{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media(max-width:945px){
+    .currancy-flex-body{
+        display:block;
+        max-width: 700px;
+        margin: 0 auto;
+        .currancy-column:not(:last-child){
+        margin-bottom: 20px;
+
+        }
+    }
+    .currency_title{
+        line-height: normal;
+        max-width: 700px;
+        text-align: center;
+    }
+    .payment-title{
+        text-align: center;
+    }
+    .currancy-column:nth-child(3){
+        margin-top: 20px;
+    }
+}
+@media(max-width:600px){
+    #mobile-adaptive{
+        display: none;
+        
+    }
+    .page-benefits{
+        background-image: url("../src/benefits_main_edited_tr.png");
+        background-size: cover;
+       
+        
+    }
+}
+@media(max-width:377px){
+    .currency_title, .block-title{
+        font-size: 30px;
     }
 }

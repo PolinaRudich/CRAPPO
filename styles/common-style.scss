@@ -12,10 +12,17 @@ $main-text-color:white;
 
 }
 
+button:hover{
+    background: white;
+    color:$main-color;
+    box-shadow:inset 0 0 10px #3671E9;
+    transition:1.1s;
+
+}
 ._container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 15px;
+   
   }
   .main-block-container{
     display: flex;
