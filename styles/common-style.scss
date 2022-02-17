@@ -12,12 +12,15 @@ $main-text-color:white;
 
 }
 
-button:hover{
+%hover-button:hover{
     background: white;
     color:$main-color;
     box-shadow:inset 0 0 10px #3671E9;
     transition:1.1s;
 
+}
+.register-common-button, .learn-more, .calc, .subscribe-button{
+    @extend %hover-button;
 }
 ._container {
     max-width: 1200px;

@@ -7,7 +7,7 @@
   color: white;
 }
 
-button:hover {
+.register-common-button:hover, .learn-more:hover, .calc:hover, .subscribe-button:hover {
   background: white;
   color: #0D0D2B;
   box-shadow: inset 0 0 10px #3671E9;
