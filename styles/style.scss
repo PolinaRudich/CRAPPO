@@ -1046,6 +1046,61 @@ line-height: 150%;
 .black-friday{
     padding: 7px 11px 4px 0px;
 }
+<<<<<<< Updated upstream
+.circle-animated:hover{
+    transition: background-color 0.3s ease-in-out;
+    padding: 14px 32px;
+    border-radius: 50px;
+    background-color: #3671E9;
+    display: flex;
+    align-items: center;
+    width: 205px;
+    height: 64px;
+    font-weight: 500;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    .arrow-circle{
+        top: 40%;
+        left: 79%;
+        -webkit-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #3671E9;
+        border-right: 2px solid #3671E9;
+        z-index: 6;
+    }
+}
+.circle-animated:hover::before{
+    content: 'Start mining';
+    display: block;
+}
+
+.circle-animated:hover::after{
+    content:url('');
+    display: flex;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    position: relative;
+    margin-left:24px;
+}
+=======
+@media(max-width:1200px){
+    .img-adaptive-width{
+        width: 100%;
+    }
+}
+.o-detail{
+ overflow: hidden;
+}
+.black-friday{
+    padding: 7px 11px 4px 0px;
+}
 
     .circle-animated._passive{
         display: flex;
@@ -1073,3 +1128,4 @@ line-height: 150%;
     font-weight: 500;
 }
 
+>>>>>>> Stashed changes

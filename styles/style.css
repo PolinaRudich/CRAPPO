@@ -524,6 +524,14 @@ header {
   max-width: 942px;
   padding: 49px 48px;
   background-color: #FFFFFF;
+<<<<<<< Updated upstream
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 10px 25px  #444246;
+          box-shadow: 0px 10px 25px  #444246;
+=======
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+>>>>>>> Stashed changes
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
@@ -659,6 +667,14 @@ header {
 .currancy-flex-body .currancy-column {
   color: #0D0D2B;
   padding: 48px 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+<<<<<<< Updated upstream
+  background-color: #2B076E;
+=======
+  background-color: white;
+>>>>>>> Stashed changes
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
@@ -1140,6 +1156,12 @@ header {
     padding: 0;
     text-align: center;
   }
+<<<<<<< Updated upstream
+=======
+  .benefits_container .benefits-text-block .benefits-text, .flex-container .benefits-text-block .benefits-text {
+    margin: 0 auto;
+  }
+>>>>>>> Stashed changes
   .benefits_container .benefits-text-block .benefits-text, .flex-container .benefits-text-block .benefits-text {
     margin: 0 auto;
   }
@@ -1362,6 +1384,95 @@ header {
   .menu-item {
     border-right: 1px solid #0D0D2B;
   }
+}
+
+<<<<<<< Updated upstream
+.circle-animated:hover {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  padding: 14px 32px;
+  border-radius: 50px;
+  background-color: #3671E9;
+=======
+@media (max-width: 1200px) {
+  .img-adaptive-width {
+    width: 100%;
+  }
+}
+
+.o-detail {
+  overflow: hidden;
+}
+
+.black-friday {
+  padding: 7px 11px 4px 0px;
+}
+
+.circle-animated._passive {
+>>>>>>> Stashed changes
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 205px;
+  height: 64px;
+  font-weight: 500;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+<<<<<<< Updated upstream
+}
+
+.circle-animated:hover .arrow-circle {
+  top: 40%;
+  left: 79%;
+  -webkit-transform: rotate(-315deg);
+  transform: rotate(-315deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #3671E9;
+  border-right: 2px solid #3671E9;
+  z-index: 6;
+}
+
+.circle-animated:hover::before {
+  content: 'Start mining';
+  display: block;
+}
+
+.circle-animated:hover::after {
+  content: url("");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  position: relative;
+  margin-left: 24px;
+=======
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #3671E9;
+}
+
+.arrow-circle._visibility-collapsed {
+  display: none;
+}
+
+.start-mining-animated-text {
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  font-weight: 500;
+>>>>>>> Stashed changes
+}
+/*# sourceMappingURL=style.css.map */
 }
 
 @media (max-width: 1200px) {
