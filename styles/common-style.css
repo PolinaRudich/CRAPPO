@@ -21,7 +21,7 @@
 
 .main-block-container {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .block-text, a, .black-friday, .item-advantags-text, .explanation, .item-currancy-text {
@@ -60,6 +60,12 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+}
+
+.register-common-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .block-title {

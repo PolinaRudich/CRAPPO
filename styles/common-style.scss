@@ -1,7 +1,7 @@
 $main-color: #0D0D2B;
 $main-lighter-color:#2B076E;
 $main-text-color:white;
-
+$full-width:100%;
 *{
     padding: 0;
     margin: 0;
@@ -29,7 +29,7 @@ $main-text-color:white;
   }
   .main-block-container{
     display: flex;
-    justify-content: start;
+    justify-content:space-between;
     
   }
   .block-text, a, .black-friday, .item-advantags-text, .explanation, .item-currancy-text {
@@ -69,6 +69,11 @@ $main-text-color:white;
 
 .try-button, .register-common-button {
     @extend %common-button;
+}
+.register-common-button{
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
 }
 
 .block-title{
