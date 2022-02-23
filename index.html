@@ -11,6 +11,7 @@
 <body>
     <header>
         <div class="header-container _container">
+            
             <div class="label-block">
                 <div class="logo">
                     <img src="./src/logo.svg" alt="">
@@ -43,6 +44,7 @@
                 
                 <button class="register-common-button">Register</button>
             </a>
+        
         </div>
     </header>
     <section class="page-main-block">
@@ -64,7 +66,7 @@
                 </button>
             </div>
             <div class="image-main">
-                <img src="./src/Illustration.png" alt="main-pic">
+                <img src="./src/Illustration.png" class="img-adaptive-width" alt="main-pic">
             </div>
             <div class="image-detail">
                 <img src="./src/main-line1.png" alt="">
@@ -115,7 +117,7 @@
         </div>
         <div class="benefits_container _container">
             <div class="photo">
-            <img src="./src/benefits_main_edited.png" id="mobile-adaptive" alt="">
+            <img src="./src/benefits_main_edited.png" class="img-adaptive-width" id="mobile-adaptive" alt="">
            </div>
             <div class="benefits-text-block info-block">
                 <div class="benefits-title block-title">Why you should choose CRAPPO</div>
@@ -133,8 +135,7 @@
            <div class="check-text block-text">Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</div>
         </div>
        </div>
-    </section>
-    <section class="calculate">
+       <div class="calc-form">
         <div class="calculate-container _container">
             <div class="calculate-flex">
                 <input class="text" type="text">
@@ -148,14 +149,20 @@
                 <button class="calc">Calculate</button>
             </div>
             </div>
-                <div class="numbers">
-                    <p class="estimated">ESTIMATED 24 HOUR REVENUE:</p>
-                    <p class="nums">0.055 130 59 ETH <span class="diff-color">($1275)</span></p>
-                    <p class="explanation">Revenue will change based on mining difficulty and Ethereum price.</p>
-                </div>
         </div>
-     </section>
+       </div>
+    </section>
+
      <section class="page-currency currency">
+        <div class="calculate-container numbers-container _container">
+            <div class="calculate-flex">
+        <div class="numbers">
+            <p class="estimated">ESTIMATED 24 HOUR REVENUE:</p>
+            <p class="nums">0.055 130 59 ETH <span class="diff-color">($1275)</span></p>
+            <p class="explanation">Revenue will change based on mining difficulty and Ethereum price.</p>
+        </div>
+            </div>
+        </div>
         <div class="currency_container _container">
             <div class="currency_title ">Trade securely and market the high growth cryptocurrencies.</div>
             <div class="currancy-flex-body">
@@ -166,12 +173,15 @@
                        </div>
                        <div class="item-currancy-title ">Bitcoin BTC</div>
                        <div class="item-currancy-text">Digital currency in which a record of transactions is maintained.</div>
-                       <button class="start-mining">
-                        <div class="start-mining-text">Start mining</div>
-                        <div class="try-arrow">
-                            <div class="arrow"></div>
-                        </div>
-                       </button> 
+<<<<<<< Updated upstream
+                       <div class="circle-animated">
+                        <div class="arrow-circle"></div>
+                    </div>
+=======
+                        <button class="circle-animated">
+                            <div class="arrow-circle"></div>
+                        </button>
+>>>>>>> Stashed changes
                        </div>
                    </div>
                    <div class="currancy-column currancy-column-grid-2">
@@ -181,9 +191,9 @@
                        </div>
                        <div class="item-currancy-title">Ethereum ETH</div>
                        <div class="item-currancy-text">Blockchain technology to create and run decentralized digital applications.</div>
-                           <div class="circle-animated">
+                           <button class="circle-animated">
                                <div class="arrow-circle"></div>
-                           </div>
+                           </button>
                    </div>
                    </div>
                    <div class="currancy-column currancy-column-grid-3">
@@ -193,12 +203,9 @@
                            </div>
                            <div class="item-currancy-title">Litecoin LTC</div>
                            <div class="item-currancy-text">Cryptocurrency that enables instant payments to anyone in the world.</div>
-                           <button class="start-mining">
-                            <div class="start-mining-text">Start mining</div>
-                            <div class="try-arrow">
-                                <div class="arrow"></div>
-                            </div>
-                        </button>
+                           <div class="circle-animated">
+                            <div class="arrow-circle"></div>
+                        </div>
                        </div>
                 </div>
             </div>
@@ -206,7 +213,7 @@
     </section>
     <section class="page-bitcoin-card bitcoin_card" name="about">
         <div class="image-detail-O">
-            <img src="./src/o.png" alt="">
+            <img src="./src/o.png" class="o-detail" alt="">
         </div>
          <div class="bitcoin-card_container _container">
             <div class="bitcoin-card-title-second block-title">Market sentiments, portfolio, and run the infrastructure of your choice</div>
@@ -220,7 +227,7 @@
                 
             </div> 
             <div class="image-bitcoin-card">
-                <img src="./src/Chart.png" alt="">
+                <img src="./src/Chart.png" class="img-adaptive-width" alt="">
             </div>  
         </div>
          </div>
@@ -229,7 +236,7 @@
         <div class="statistics_container _container">
             <div class="flex-container">
                 <div class="image-statistics">
-                <img src="./src/Statistic.png" alt="">
+                <img src="./src/Statistic.png" class="img-adaptive-width" alt="">
                 </div>
                  <div class="statistics-text-block info-block">
                 <div class="statisctics-title block-title">Detailed Statistics</div>
@@ -249,7 +256,7 @@
                 <button class="learn-more">Learn more</button>
             </div>
            <div class="image-analitics">
-               <img src="./src/Table.png" alt="">
+               <img src="./src/Table.png" class="img-adaptive-width" alt="">
            </div>
         </div>
         </div>

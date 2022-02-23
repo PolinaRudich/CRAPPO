@@ -4,16 +4,14 @@
 header, .page-main-block, .page-advantages, .page-benefits, .page_check, .page_contacts{
     background:$main-color;
 }
-img{
-    width: 100%;
-}
+
 header{
     position: fixed;
     top: 0;
     left:0;
     right: 0;
     z-index: 33;
-    padding:0px 15px;
+    padding: 60px 15px 20px;
 }
 .burger{
     display: none;
@@ -27,15 +25,17 @@ header{
 .page-bitcoin-card, .page_statistics, .page_analitics{
     background: $main-lighter-color;
 }
-.main-block-container, .advantages-container,.benefits_container, .check-container, .calculate-container, .currancy-container, .bitcoin-card_container, .analitics_container, .start-mining_container , .navigation_container, .contacts-container{
-    padding: 0px 15px;
+.page-bitcoin-card{
+    overflow: hidden;
+}
+._container{
+    padding: 0 15px;
 }
 .header-container{
-    min-height: 112px;
     display: flex;
     bottom: 0;
     justify-content: space-evenly;
-    align-items:flex-end;
+    align-items:center;
     .label-block{
         display: flex;
         align-items: center;
@@ -49,8 +49,6 @@ header{
         }
     }
     .header-menu{
-        margin-left: 451px;
-        padding-bottom: 11px;
             .menu-list{
                 display: flex;
                 flex-wrap: nowrap;
@@ -96,7 +94,7 @@ header{
 
     .main-info-block{
         z-index: 2;
-        padding:262px 0px 0px;
+        padding:263px 0px 0px;
         h1{
             font-weight: bold;
             font-size: 64px;
@@ -116,17 +114,43 @@ header{
 }
 .sale{
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
 height: inherit;
 color: white;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 32px;
+cursor: pointer;
+   
 }
-.percent{
+.black-friday:hover{
+      
     background-color: #FFFFFF;
     color: #0D0D2B;
+    margin-top:4px ;
+    border-radius: 50px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 4px;
+    height: 32px;
+    padding-bottom: 0;
+    transition: background-color 1s;
+
+
+}
+.percent{
+    background-color: #29292b00;
     border-radius: 50px;
     padding: 4px 16px;
     font-weight: bold;
+    letter-spacing: 0.04em;
+    line-height: 24px;
+    margin: 4px 4px 0px;
+    &:hover{
+        background-color: #FFFFFF;
+        color: #0D0D2B;
+        transition: background-color 1s;
+    }
 }
 .main-text{
     color: #E0E0E0;
@@ -176,7 +200,6 @@ color: white;
     top:172px;
     position: relative;
     img{
-        max-width: 100%;
         z-index: 2;
     }
     @media(max-width:1087px){
@@ -259,7 +282,7 @@ color: white;
     }
 /* BENEFITS */
 .page-benefits{
-    padding: 79px 100px;
+    padding: 79px 0px 100px;
     position: relative;
     .image-detail-D{
         transform: rotate(-10deg);
@@ -289,15 +312,19 @@ color: white;
 }
 .benefits-text-block{
     padding-left: 71px;
+    .benefits-text{
+        max-width: 408px;
+    }
 }
 /* CHECK */
 .page_check{
-    padding:64px 0px 219px;
+    position: relative;
+    padding:64px 0px 0px;
     .check-text-block{
         text-align: center;
         .check-text{
             max-width: 622px;
-            margin: 0 auto;
+            margin: 0 auto 64px;
             padding-bottom: 0;
         }
     }
@@ -310,10 +337,9 @@ color: white;
 .calculate-container{
     max-width: 942px;
     padding: 49px 48px;
-    margin-top: -155px;
     background-color: #FFFFFF;
-    border-radius: 16px;
-    box-shadow: 0px 10px 25px  #444246;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 .calculate-flex{
     width: inherit;
@@ -324,6 +350,8 @@ color: white;
     input{
         flex:1 1 auto;
     }
+}
+.calc-form{
 }
 @media(max-width:684px){
     .calculate-flex{
@@ -394,11 +422,14 @@ color: #0D0D2B;
     color: #828282;
 }
 /* CURRANCY */
+
 .page-currency{
-    padding:100px 0px 100px;
+    padding:0px 0px 100px;
 }
 .currency_title{
+    margin:0 auto ;
     color: black;
+    max-width: 741px;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
@@ -412,11 +443,13 @@ color: #0D0D2B;
     }
 }
     .currancy-column{
+        color: #0D0D2B;
         padding: 48px 15px;
         flex: 0 1 33.333%;
-        background-color: #2B076E;
+        background-color: white;
         border-radius: 25px;
     }
+
     .currancy-item {
         display: flex;
         flex-direction: column;
@@ -429,18 +462,54 @@ color: #0D0D2B;
             font-size: 32px;
             line-height: 150%;
             text-align: center;
-            color: #FFFFFF;
+            color: #0D0D2B;
             
+        }
+        .item-currancy-text{
+            color: black;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
         }
     }
 }
+.currancy-column:hover{
+    background-color: #2B076E;
+    
+    .item-currancy-title{
+    color: white;
+    display: inline-block;
+    text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0);
+  }
+    .item-currancy-text{
+        color: white;
+        text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0);
+    }
+}
+.numbers-container{
+    max-width: 942px;
+    padding: 0px 48px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px 10px 25px #444246;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius:16px ;
+    border-bottom-right-radius: 16px;
 
+}
 .currency_title{
     margin-bottom: 64px;
 }
 .item-currancy-text{
     text-align: center;
     margin:16px 0px 25px;
+}
+.currency_container{
+  
+    padding-top: 100px;
+    text-align: center;
 }
 .start-mining{
 display:flex;
@@ -764,6 +833,9 @@ line-height: 150%;
         .benefits-text-block{
             padding: 0;
             text-align: center;
+            .benefits-text{
+                margin: 0 auto;
+            }
         }
     }
     .flex-container{
@@ -963,3 +1035,86 @@ line-height: 150%;
         border-right:1px solid $main-color;
     }
 }
+<<<<<<< Updated upstream
+.circle-animated:hover{
+    transition: background-color 0.3s ease-in-out;
+    padding: 14px 32px;
+    border-radius: 50px;
+    background-color: #3671E9;
+    display: flex;
+    align-items: center;
+    width: 205px;
+    height: 64px;
+    font-weight: 500;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    .arrow-circle{
+        top: 40%;
+        left: 79%;
+        -webkit-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #3671E9;
+        border-right: 2px solid #3671E9;
+        z-index: 6;
+    }
+}
+.circle-animated:hover::before{
+    content: 'Start mining';
+    display: block;
+}
+
+.circle-animated:hover::after{
+    content:url('');
+    display: flex;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    position: relative;
+    margin-left:24px;
+}
+=======
+@media(max-width:1200px){
+    .img-adaptive-width{
+        width: 100%;
+    }
+}
+.o-detail{
+ overflow: hidden;
+}
+.black-friday{
+    padding: 7px 11px 4px 0px;
+}
+
+    .circle-animated._passive{
+        display: flex;
+        align-items: center;
+        width: 205px;
+        height: 64px;
+        font-weight: 500;
+        padding-right: 16px;
+        padding-left: 16px;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: #3671E9;
+
+    }
+  .arrow-circle._visibility-collapsed{
+    display: none;
+}
+.start-mining-animated-text{
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: 500;
+}
+
+>>>>>>> Stashed changes
