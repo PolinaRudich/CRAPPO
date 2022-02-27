@@ -33,18 +33,8 @@ function createRateItem(rateData) {
     <div class="volume-of-bitcoin">$${rateData.volume}</div>
     `;
 }
-function createLiteCoinItem(rateLiteCoinData){
-    return `
-    <img src="${rateLiteCoinData.logoSource}" class="bitcoin-card" alt="">
-    <div class="bitcoin-text">
-        <div class="bitcoin-abbr">${rateLiteCoinData.currencyShortName}</div>
-        <div class="bitcoin-title">${rateLiteCoinData.currencyName}</div>
-    </div>
-    <div class="bitcoin-in-dollars">$${rateLiteCoinData.price}</div>
-    <div class="percent-of-bitcoin">${rateLiteCoinData.percentageChange}</div>
-    <div class="volume-of-bitcoin">$${rateLiteCoinData.volume}</div>
-    `
-}
+
+
 
 fetch('https://my-json-server.typicode.com/PolinaRudich/CRAPPO/rates')
     .then((response) => response.json())

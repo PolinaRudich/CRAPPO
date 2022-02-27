@@ -10,6 +10,15 @@
             "logoSource": "https://raw.githubusercontent.com/PolinaRudich/CRAPPO/main/src/Bitcoin.png"
         },
         {
+            "id": 2,
+            "price": 23452,
+            "percentageChange": 4.2,
+            "volume": 35734023,
+            "currencyName": "Litecoin",
+            "currencyShortName": "LTC",
+            "logoSource": "https://raw.githubusercontent.com/PolinaRudich/CRAPPO/main/src/lite.png"
+        },
+        {
             "id": 3,
             "price": 243,
             "percentageChange": -2.9,
