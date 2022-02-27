@@ -1376,7 +1376,7 @@ p.max-width {
     width: 100%;
     grid-template-columns: 56px auto auto auto auto;
     grid-template-rows: auto auto;
-    grid-row-gap: 131px;
+    grid-row-gap: 24px;
     align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
