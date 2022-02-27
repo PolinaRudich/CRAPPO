@@ -1268,7 +1268,7 @@ header {
   display: grid;
   grid-template-columns: 56px 125px 121px 141px 92px;
   grid-template-rows: auto auto;
-  grid-row-gap: 131px;
+  grid-row-gap: 24px;
   align-items: center;
 }
 .image-analitics .image-analitics-second-block {
@@ -1376,7 +1376,6 @@ p.max-width {
     width: 100%;
     grid-template-columns: 56px auto auto auto auto;
     grid-template-rows: auto auto;
-    grid-row-gap: 24px;
     align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
