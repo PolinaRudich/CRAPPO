@@ -3,7 +3,7 @@
         {
             "id": 1,
             "price": 49520,
-            "percentageChange": "[38.3,34,3,33,31,2,7,8,7]",
+            "percentageChange": [38.3,34,3,33,31,2,7,8,7],
             "volume": 2300230,
             "currencyName": "Bitcoin",
             "currencyShortName": "BTC",
@@ -12,7 +12,7 @@
         {
             "id": 2,
             "price": 23452,
-            "percentageChange": "[38.3,34,3,33,31,2,7,8,7]",
+            "percentageChange": [38.3,34,3,33,31,2,7,8,7],
             "volume": 35734023,
             "currencyName": "Litecoin",
             "currencyShortName": "LTC",
@@ -21,7 +21,7 @@
         {
             "id": 3,
             "price": 243,
-            "percentageChange": "[38.3,34,3,33,31,2,7,8,7]",
+            "percentageChange": [38.3,34,3,33,31,2,7,8,7],
             "volume": 23202,
             "currencyName": "Ethereum",
             "currencyShortName": "ETH",
