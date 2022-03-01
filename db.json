@@ -12,7 +12,7 @@
         {
             "id": 2,
             "price": 23452,
-            "percentageChange": [38.3,34,3,33,31,2,7,8,7],
+            "percentageChange": [38.399, -122,222,-0.3, 1,2,7,8,7],
             "volume": 35734023,
             "currencyName": "Litecoin",
             "currencyShortName": "LTC",
