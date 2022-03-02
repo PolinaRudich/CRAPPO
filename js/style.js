@@ -29,8 +29,8 @@ function createRateItem(rateData, id) {
         <div class="bitcoin-abbr">${rateData.currencyShortName}</div>
         <div class="bitcoin-title">${rateData.currencyName}</div>
     </div>
-    <div class="bitcoin-in-dollars">$${rateData.price}</div>
-    <div id="${id}" class="percent-of-bitcoin"></div>
+    <div id="price${id}" class="bitcoin-in-dollars">$</div>
+    <div id="percent${id}" class="percent-of-bitcoin"></div>
     <div class="volume-of-bitcoin">$${rateData.volume}</div>
     `;
 }
@@ -44,9 +44,8 @@ fetch('https://my-json-server.typicode.com/PolinaRudich/CRAPPO/rates')
 function createRatesFromJson(json) {
     let ratesHtml = '';
     let rateLiteCoinHtml = '';
-    let percentageIdTemplate = "percent";
     json.forEach((element, index) => {
-        var currentId = percentageIdTemplate + index;
+        var currentId = index;
         let rateHtml = createRateItem(element, currentId);
         ratesHtml = ratesHtml + rateHtml;
 
@@ -54,25 +53,27 @@ function createRatesFromJson(json) {
     });
     ratesGrid.innerHTML = ratesHtml;
     json.forEach((element, index) => {
-        var currentId = percentageIdTemplate + index;
+        var currentId = index;
+        
         createPercentage(element, currentId);
     });
 }
 
 function createPercentage(json, id) {
-    var percentOfBitcoin = document.querySelector('#' + id);
-    var priceOfBitcoin = document.querySelector('#'+id);
+    var percentOfBitcoin = document.querySelector('#percent' + id);
+    var priceOfBitcoin = document.querySelector('#price'+id);
     var i = 0;
-
     setInterval(function () {
+
         priceOfBitcoin.innerHTML = json.price[i];
         percentOfBitcoin.innerHTML = getPercentageString(json.percentageChange[i]);
-        if (i + 1 == json.percentageChange.length) {
-            i = 0;
-        }
-        else {
-            i++;
-        }
+            if (i + 1 == json.percentageChange.length) {
+                i = 0;
+            }
+            else {
+                i++;
+            }
+
 
     }, 2000);
 

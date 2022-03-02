@@ -2,7 +2,7 @@
     "rates": [
         {
             "id": 1,
-            "price": 49520,
+            "price": [49520, 3456,9876,567,3456],
             "percentageChange": [38.3,34,3,33,31,2,7,8,7],
             "volume": 2300230,
             "currencyName": "Bitcoin",
@@ -11,7 +11,7 @@
         },
         {
             "id": 2,
-            "price": 23452,
+            "price": [49520, 3456,9876,567,3456],
             "percentageChange": [38.399, -122,222,-0.3, 1,2,7,8,7],
             "volume": 35734023,
             "currencyName": "Litecoin",
@@ -20,7 +20,7 @@
         },
         {
             "id": 3,
-            "price": 243,
+            "price": [49520, 3456,9876,567,3456],
             "percentageChange": [38.3,34,3,33,31,2,7,8,7],
             "volume": 23202,
             "currencyName": "Ethereum",
