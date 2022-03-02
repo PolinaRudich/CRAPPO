@@ -4,7 +4,7 @@
             "id": 1,
             "price": [49520, 3456,9876,567,3456],
             "percentageChange": [38.3,34,3,33,31,2,7,8,7],
-            "volume": 2300230,
+            "volume": [23202, 3,5],
             "currencyName": "Bitcoin",
             "currencyShortName": "BTC",
             "logoSource": "https://raw.githubusercontent.com/PolinaRudich/CRAPPO/main/src/Bitcoin.png"
@@ -13,7 +13,7 @@
             "id": 2,
             "price": [49520, 3456,9876,567,3456],
             "percentageChange": [38.399, -122,222,-0.3, 1,2,7,8,7],
-            "volume": 35734023,
+            "volume": [23202, 3,5],
             "currencyName": "Litecoin",
             "currencyShortName": "LTC",
             "logoSource": "https://raw.githubusercontent.com/PolinaRudich/CRAPPO/main/src/lite.png"
@@ -22,7 +22,7 @@
             "id": 3,
             "price": [49520, 3456,9876,567,3456],
             "percentageChange": [38.3,34,3,33,31,2,7,8,7],
-            "volume": 23202,
+            "volume": [23202, 3,5],
             "currencyName": "Ethereum",
             "currencyShortName": "ETH",
             "logoSource": "https://raw.githubusercontent.com/PolinaRudich/CRAPPO/main/src/Ethereum.png"
