@@ -135,22 +135,21 @@
            <div class="check-text block-text">Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</div>
         </div>
        </div>
-       <div class="calc-form">
+       <form name="calc-form" onsubmit="return false;">
         <div class="calculate-container _container">
             <div class="calculate-flex">
-                <input class="text" type="text">
-                <select class="letters" name="letters">
-                    <option value="idk">Отвечает односложно</option>
-                    <option value="idk">Отвечает развернуто</option>
-                    <option value="idk">Приятно поболтали</option>
-                    <option value="idk">Лучше не начинать говорить</option>
+                <input class="text"  type="number" name="amount">
+                <select class="letters" name="letters" id="option-value"  >
+                    <option value="TL">TL</option>
+                    <option value="TH">TH</option>
+                   
                 </select>
                 <div class="box">
-                <button class="calc">Calculate</button>
+                <button class="calc" type="submit" onclick="ClickToCalculate(this)">Calculate</button>
             </div>
             </div>
         </div>
-       </div>
+    </form>
     </section>
 
      <section class="page-currency currency">
@@ -158,7 +157,7 @@
             <div class="calculate-flex">
         <div class="numbers">
             <p class="estimated">ESTIMATED 24 HOUR REVENUE:</p>
-            <p class="nums">0.055 130 59 ETH <span class="diff-color">($1275)</span></p>
+            <p class="nums">0.055 130 59 ETH </p><span class="diff-color">($1275)</span>
             <p class="explanation">Revenue will change based on mining difficulty and Ethereum price.</p>
         </div>
             </div>
